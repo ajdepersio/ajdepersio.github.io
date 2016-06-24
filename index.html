@@ -26,7 +26,7 @@
     <div id="main_container">
       <div id="navbar_container">
         <!--Navigation Bar-->
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse" style="border-radius: 0px;">
           <div class="container-fluid">
             <div class="navbar-header">
               <a class="navbar-brand" href="#">Andrew DePersio</a>
@@ -45,10 +45,17 @@
         </nav>
       </div>
       <!--Main Document-->
-      <div id="document_container">
-        <h1>Hello!</h1>
+      <div id="document_container" >
+        <div class=col-lg-9>
+          <h1>Hello!</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
         <!--Twitter-->
-        <a class="twitter-timeline" href="https://twitter.com/ajdepersio">Tweets by ajdepersio</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div id="twitter_container" class="col-lg-3" style="border: 5px solid black">
+          <a class="twitter-timeline" data-width="250" data-height="800" data-dnt="true" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/ajdepersio">Tweets by ajdepersio</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
       </div>
     </div>
   </body>
