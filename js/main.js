@@ -14,3 +14,7 @@ $(function() {
 var shiftWindow = function() { scrollBy(0, -50) };
 if (location.hash) shiftWindow();
 window.addEventListener("hashchange", shiftWindow);
+
+var twitter_containerEle = $('#twitter_container');
+var document_containerEle = $('#document_container');
+twitter_containerEle.height = document_containerEle.height;
