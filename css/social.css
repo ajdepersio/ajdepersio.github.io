@@ -4,14 +4,16 @@
      -o-transform: scale(1.1);
  }
  .social {
-     -webkit-transform: scale(0.8);
+     /*-webkit-transform: scale(0.8);
      /* Browser Variations: */
      
-     -moz-transform: scale(0.8);
+     /*-moz-transform: scale(0.8);
      -o-transform: scale(0.8);
      -webkit-transition-duration: 0.5s;
      -moz-transition-duration: 0.5s;
-     -o-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s; */
+
+     color: #E95420
  }
 
 /*
