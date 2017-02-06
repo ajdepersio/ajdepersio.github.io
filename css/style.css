@@ -14,3 +14,7 @@ body {
 .headshot {
     margin-right: 10px;
 }
+
+#document_body {
+    padding-right: 0px;
+}
