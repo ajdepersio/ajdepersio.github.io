@@ -1,0 +1,26 @@
+body {
+    /*background-color: #AEA79F;*/
+    /*color: #333333;*/
+}
+
+.subsection {
+    margin-bottom: 10px;
+}
+
+.headtext {
+    vertical-align: middle;
+}
+
+.headshot {
+    margin-right: 10px;
+}
+
+#document_body {
+    padding-right: 0px;
+}
+
+.jumbotron {
+    /*background-color: #AEA79F;*/
+    /*background-image: url("../assets/jumbotron1.png");*/
+    /*color: #FFFFFF;*/
+}
