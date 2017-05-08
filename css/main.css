@@ -19,8 +19,9 @@ body {
     padding-right: 0px;
 }
 
-.jumbotron {
+#Home {
     /*background-color: #AEA79F;*/
     /*background-image: url("../assets/jumbotron1.png");*/
     /*color: #FFFFFF;*/
+    margin-bottom: 0px;
 }
