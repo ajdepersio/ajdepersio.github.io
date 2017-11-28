@@ -6,6 +6,8 @@ I am Andrew DePersio, a software engineer with a passion for quality and produci
 My personal belief in the importance of software can be summed up in the following: the ability to further
 mankind's endeavors has only ever been limited by the resources available at the time. The role of software
 engineers today is to create the resources that act as the catalyst to allow the world to move forward.
+
+Over the course of my career, I have worked in a wide variety of industries 
 <!-- Something about how I've worked in a variety of platforms and industry in many roles -->
 
 ## Education
@@ -57,11 +59,21 @@ A novel method for structural health monitoring (SHM), known as the Phase Space 
 
 #### GitSnare
 
+A solution for distributing and updating hook scripts for git repositories.
+
+After spearheading a transition from SVN to git for version control, it was determined that hook scripts would be used to enforce workflow standards as well as to prevent common mistakes/destructive operations from developers new to git.  As a part of this effort, a solution for distributing and keeping client-side hook scripts was needed. 
+
 #### Guild Wars 2 Trading Post
 
-#### WavMaker
+A web-based trading post companion application for the MMORPG Guild Wars 2.  Provides ability to monitor user buy/sell prices for in-game items.
+
+The popular MMORPG Guild Wars 2 provides a trading system for players to buy and sell in-game items for in-game currancy in a manner similar to the stock market.  By utilizing the public REST api, we are able to report and track item prices to maximize profitability.
 
 #### LogSlicer
+
+Log collection utility for CIC systems/.ininlog file format.  Includes ability for user-defined log sets and FTP upload.
+
+#### WavMaker
 
 #### Los Alamos Employee Management System
 
