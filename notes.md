@@ -71,9 +71,11 @@ The popular MMORPG Guild Wars 2 provides a trading system for players to buy and
 
 #### LogSlicer
 
-Log collection utility for CIC systems/.ininlog file format.  Includes ability for user-defined log sets and FTP upload.
+Log collection utility for CIC systems/.ininlog file format.  Notable features include FTP support, log archiving, user-defined log sets, integration with internal Interactive Intelligence support systems.
 
 #### WavMaker
+
+Audio generation utility to create test prompts for CIC IVR systems using Microsoft SAPI.
 
 #### Los Alamos Employee Management System
 
