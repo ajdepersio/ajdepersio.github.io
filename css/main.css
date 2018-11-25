@@ -1,27 +1,35 @@
-body {
-    /*background-color: #AEA79F;*/
-    /*color: #333333;*/
+.navbar-brand {
+    font-size: 1em;
 }
 
-.subsection {
-    margin-bottom: 10px;
+.jumbotron {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
-.headtext {
-    vertical-align: middle;
+.jumbotron hr {
+    border-top: 1px solid darkgray;
 }
 
-.headshot {
-    margin-right: 10px;
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid darkgray;
 }
 
-#document_body {
-    padding-right: 0px;
+.align-center {
+    text-align: center;
 }
 
-#Home {
-    /*background-color: #AEA79F;*/
-    /*background-image: url("../assets/jumbotron1.png");*/
-    /*color: #FFFFFF;*/
-    margin-bottom: 0px;
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.tabs-pane {
+    border: none !important; 
 }
