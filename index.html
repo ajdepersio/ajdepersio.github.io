@@ -49,11 +49,15 @@
     <div>
         <div class="jumbotron">
             <div class="container">
-                <div class="col-10 offset-1 align-center" style="padding-top: 20px;">
-                    <img class='profile-image' src='http://cats.depersio.net/square' alt='Andrew DePersio Profile'>
-                    <h2 class="display-3">Andrew DePersio</h2>
-                    <hr>
-                    <h4>Software Engineer + Manager in Indianapolis</h4>
+                <div class="row">
+                    <div class="col-3 offset-2 align-right">
+                        <img class='profile-image' src='http://cats.depersio.net/square' alt='Andrew DePersio Profile'>
+                    </div>
+                    <div class="col-4">
+                        <h2 class="display-3">Andrew DePersio</h2>
+                        <hr>
+                        <h4>Software Engineer + Manager in Indianapolis</h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,10 +71,10 @@
                         <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
                     </nav>
-
+                    <hr>
                     <div class="tabs-pane active" id="about">
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-7">
                                 <p>I have <span id="experience-years"></span>+ years of experience as a software
                                     engineer, implementation consultant, and engineering manager. I currently am
                                     employeed as a Software Engineering Team Lead at <a href="https://reninc.com"
@@ -81,72 +85,60 @@
                                     guidance at the executive level. I am motivated by the desire to "take things to
                                     the next level" and approach tasks in a forward-thinking manner, always open to
                                     iteration and improvement.</p>
-                                <p>I believe that throughout the history of mankind, the furtherment of man's endeavors
-                                    greatest hinderence has always been the resources available at that time. The role
+                                <p>I believe that throughout history, the greatest hinderence to the furtherment of man's endeavors
+                                    has always been the resources available at that time. The role
                                     of software in today's world is creating the resources that allow the world to move
                                     forward. It's a pretty powerful thing.</p>
-                                I am Andrew DePersio, a software engineer with a passion for quality and producing an
-                                unmatched user experience.
-                                My personal belief in the importance of software can be summed up in the following: the
-                                ability to further
-                                mankind's endeavors has only ever been limited by the resources available at the time.
-                                The role of software
-                                engineers today is to create the resources that act as the catalyst to allow the world
-                                to move forward.</p>
+                                <p>I'm always interested in becoming a better engineer and leader as well as meeting
+                                    interesting people in Indianapolis. I hope you enjoy reading a bit about my work.</p>
                             </div>
-                            <div class="col-4">
+                            <div class="col-5">
+                                <h4 class="align-left">Skillset</h3>
+                                <ul>
+                                    <li><strong>Cloud Services:</strong> Amazon Web Services, Microsoft Azure</li>
+                                    <li><strong>Languages:</strong> C#, Javascript, Node.js, Perl, Powershell</li>
+                                    <li><strong>Frontend Frameworks:</strong> ASP.NET, ASP MVC, Ember.js</li>
+                                    <li><strong>Backend Frameworks:</strong> .NET Core Web API, Express.js, WCF</li>
+                                    <li><strong>Databases:</strong> Microsoft SQL, Oracle, MySQL</li>
+                                    <li><strong>Version Control:</strong> Git, SVN, Mercurial, Perforce</li>
+                                </ul>
+                                <h4 class="align-left">Achievements</h3>
+                                <ul>
+                                    <li>AWS Certified Developers Associate: September 2016</li>
+                                    <li>Interactive Intelligence Developer Award of Excellence 2015</li>
+                                    <li>B.S Computer Science, Minor in Applied Physics: Ball State University class of 2012</li>
+                                    <li>Co-Author: <a href="https://www.osti.gov/biblio/1029952">Phase Space Dissimilarity Measures for Structural Health Monitoring</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                     <div class="tabs-pane" id="experience">
+                        <div class="tabs">
+                            <div class="row">
+                                <div class="col-4">
+                                    <nav class="tabs-nav tabs-nav-block">
+                                        <a href="#tab-1-example-2" class="active">Tab 1</a>
+                                        <a href="#tab-2-example-2">Tab 2</a>
+                                        <a href="#tab-3-example-2">Tab 3</a>
+                                        <a href="#" class="disabled">Disabled</a>
+                                    </nav>
+                                </div>
+
+                                <div class="col-8">
+                                    <div class="tabs-pane active" id="tab-1-example-2">
+                                        <h1>header</h1>1
+                                    </div>
+                                    <div class="tabs-pane" id="tab-2-example-2">
+                                        <h2>header</h2>
+                                    </div>
+                                    <div class="tabs-pane" id="tab-3-example-2">
+                                        <h3>header</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div id="experience-container"></div>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Endpoint</th>
-                                    <th>Description</th>
-                                    <th>Example</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>http://cats.depersio.net/random</td>
-                                    <td>Returns a random cat image of a random aspect ratio.</td>
-                                    <td><a href="#" onClick="MyWindow=window.open('http://cats.depersio.net/random','Meow','width=600,height=300'); return false;">Meow!</a></td>
-                                </tr>
-                                <tr>
-                                    <td>http://cats.depersio.net/square</td>
-                                    <td>Returns a random cat image of a 1-to-1 aspect ratio.</td>
-                                    <td><a href="#" onClick="MyWindow=window.open('http://cats.depersio.net/square','Meow','width=600,height=300'); return false;">Meow!</a></td>
-                                </tr>
-                                <tr>
-                                    <td>http://cats.depersio.net/standard</td>
-                                    <td>Returns a random cat image of a 4-to-3 aspect ratio.</td>
-                                    <td><a href="#" onClick="MyWindow=window.open('http://cats.depersio.net/standard','Meow','width=600,height=300'); return false;">Meow!</a></td>
-                                </tr>
-                                <tr>
-                                    <td>http://cats.depersio.net/wide</td>
-                                    <td>Returns a random cat image of a 16-to-9 aspect ratio.</td>
-                                    <td><a href="#" onClick="MyWindow=window.open('http://cats.depersio.net/wide','Meow','width=600,height=300'); return false;">Meow!</a></td>
-                                </tr>
-                                <tr>
-                                    <td>http://cats.depersio.net/tall</td>
-                                    <td>Returns a random cat image of a 9-to-16 aspect ratio.</td>
-                                    <td><a href="#" onClick="MyWindow=window.open('http://cats.depersio.net/tall','Meow','width=600,height=300'); return false;">Meow!</a></td>
-                                </tr>
-                                <tr>
-                                    <td>http://cats.depersio.net/panorama</td>
-                                    <td>Returns a random cat image of a 3-to-1 aspect ratio.</td>
-                                    <td><a href="#" onClick="MyWindow=window.open('http://cats.depersio.net/panorama','Meow','width=600,height=300'); return false;">Meow!</a></td>
-                                </tr>
-                                <tr>
-                                    <td>http://cats.depersio.net/:width/:height</td>
-                                    <td>Returns a random cat image of the specified size.</td>
-                                    <td><a href="#" onClick="MyWindow=window.open('http://cats.depersio.net/' + Math.floor(Math.random() * (200 - 0 + 1)) + 0 + '/' + Math.floor(Math.random() * (200 - 0 + 1)) + 0,'Meow','width=600,height=300'); return false;">Meow!</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
 
                     <div class="tabs-pane" id="projects">

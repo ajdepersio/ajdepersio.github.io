@@ -59,21 +59,22 @@ m_jobs.forEach(job => {
 });
 
 $.fn.populateJobInfo = function(){
-    var now = new Date().toISOString();
-    var rowId = "row-" + now;
-    //build base tab column
-    var navId = "nav-" + now;
-    $(this).append('<div class="tabs"><div id="' + rowId + '" class="row"><div class="col-4"><nav id="' + navId + '" class="tab-nav tabs-nav-block"></nav></div></div></div>');
-
-    //build base content column
-    var contentId = "content-" + now;
-    $('#' + rowId).append('<div id="' + contentId + '" class="col-8"></div>');
+    var header = '<div class="tabs"><div class="row">';
+    var nav = '<div class="col-4"><nav class="tab-nav tabs-nav-block">';
+    var content = '<div class="col-8">';
 
     //Add content
-    var ele;
-    var navEle = $('#' + navId);
-    m_jobs.forEach(job => {
-        ele = "<a href='tab1'>" + job.Label + "</a>";
-        $(navEle).append(ele);
-    });
+    var navItem;
+    var contentItem;
+    for (let i = 0; i < m_jobs.length; i++) {
+        var job = m_jobs[i];
+        
+        
+    }
+    
+    var contentClose = '</div>';
+    var navClose = '</nav></div>';
+    var footer = '</div></div>';
+    
+    
 };
