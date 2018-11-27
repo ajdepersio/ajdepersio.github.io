@@ -1,4 +1,4 @@
-$(document).ready(new function() {
+$(document).ready(function() {
   //Years of experience
   var now = new Date();
   var start = new Date(2012, 5, 1);
