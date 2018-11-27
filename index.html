@@ -12,40 +12,19 @@
 
     <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta24/shoelace.css">
     <!-- Bootstrap core CSS -->
-    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/lib/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
+    -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <!--<link href="jumbotron.css" rel="stylesheet">-->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/social.css" rel="stylesheet">
-    <link href="css/navbar.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="navbar_container">
-        <!--Navigation Bar-->
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="navbar-header col-6">
-                        <a class="navbar-brand" href="#">Andrew DePersio</a>
-                    </div>
-                    <div class="col-6 align-right">
-                        <a href="https://www.linkedin.com/in/andrew-depersio-55ab3643" target="_blank"><i id="social-li"
-                                class="fa fa-linkedin-square fa-2x social"></i></a>
-                        <a href="https://twitter.com/ajdepersio" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
-                        <a href="https://ajdepersio.tumblr.com/" target="_blank"><i id="social-tb" class="fa fa-tumblr-square fa-2x social"></i></a>
-                        <a href="https://github.com/ajdepersio" target="_blank"><i id="social-gh" class="fa fa-github-square fa-2x social"></i></a>
-                        <a href="mailto:ajdepersio@gmail.com" target="_blank"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-
     <div>
         <div class="jumbotron">
             <div class="container">
@@ -54,9 +33,14 @@
                         <img class='profile-image' src='http://cats.depersio.net/square' alt='Andrew DePersio Profile'>
                     </div>
                     <div class="col-4">
-                        <h2 class="display-3">Andrew DePersio</h2>
+                        <h1 class="display-3">Andrew DePersio</h1>
+                        <a href="https://www.linkedin.com/in/andrew-depersio-55ab3643" target="_blank"><i id="social-li" class="fa fa-linkedin-square fa-2x social"></i></a>
+                        <a href="https://twitter.com/ajdepersio" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
+                        <a href="https://ajdepersio.tumblr.com/" target="_blank"><i id="social-tb" class="fa fa-tumblr-square fa-2x social"></i></a>
+                        <a href="https://github.com/ajdepersio" target="_blank"><i id="social-gh" class="fa fa-github-square fa-2x social"></i></a>
+                        <a href="mailto:ajdepersio@gmail.com" target="_blank"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
                         <hr>
-                        <h4>Software Engineer + Manager in Indianapolis</h4>
+                        <h2>Software Engineer + Manager in Indianapolis</h2>
                     </div>
                 </div>
             </div>
@@ -66,10 +50,10 @@
             <div class="row">
                 <div class="tabs">
                     <nav class="tabs-nav col-10 offset-1 align-center">
-                        <a href="#about" class="active">About</a>
-                        <a href="#experience">Experience</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#contact">Contact</a>
+                        <a href="#about" class="orange active">About</a>
+                        <a href="#experience" class="orange">Experience</a>
+                        <a href="#projects" class="orange">Projects</a>
+                        <a href="#contact" class="orange">Contact</a>
                     </nav>
                     <hr>
                     <div class="tabs-pane active" id="about">
@@ -85,7 +69,8 @@
                                     guidance at the executive level. I am motivated by the desire to "take things to
                                     the next level" and approach tasks in a forward-thinking manner, always open to
                                     iteration and improvement.</p>
-                                <p>I believe that throughout history, the greatest hinderence to the furtherment of man's endeavors
+                                <p>I believe that throughout history, the greatest hinderence to the furtherment of
+                                    man's endeavors
                                     has always been the resources available at that time. The role
                                     of software in today's world is creating the resources that allow the world to move
                                     forward. It's a pretty powerful thing.</p>
@@ -94,21 +79,36 @@
                             </div>
                             <div class="col-5">
                                 <h4 class="align-left">Skillset</h3>
-                                <ul>
-                                    <li><strong>Cloud Services:</strong> Amazon Web Services, Microsoft Azure</li>
-                                    <li><strong>Languages:</strong> C#, Javascript, Node.js, Perl, Powershell</li>
-                                    <li><strong>Frontend Frameworks:</strong> ASP.NET, ASP MVC, Ember.js</li>
-                                    <li><strong>Backend Frameworks:</strong> .NET Core Web API, Express.js, WCF</li>
-                                    <li><strong>Databases:</strong> Microsoft SQL, Oracle, MySQL</li>
-                                    <li><strong>Version Control:</strong> Git, SVN, Mercurial, Perforce</li>
-                                </ul>
-                                <h4 class="align-left">Achievements</h3>
-                                <ul>
-                                    <li>AWS Certified Developers Associate: September 2016</li>
-                                    <li>Interactive Intelligence Developer Award of Excellence 2015</li>
-                                    <li>B.S Computer Science, Minor in Applied Physics: Ball State University class of 2012</li>
-                                    <li>Co-Author: <a href="https://www.osti.gov/biblio/1029952">Phase Space Dissimilarity Measures for Structural Health Monitoring</a></li>
-                                </ul>
+                                    <ul>
+                                        <li><strong>Cloud Services</strong>
+                                            <ul>
+                                                <li>Amazon Web Services</li>
+                                                <li>Microsoft Azure</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Programming Languages</strong>
+                                            <ul>
+                                                <li>C#</li>
+                                                <li>Javascript</li>
+                                                <li>Node.js</li>
+                                                <li>Perl</li>
+                                                <li>Powershell</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Frontend Frameworks:</strong> ASP.NET, ASP MVC, Ember.js</li>
+                                        <li><strong>Backend Frameworks:</strong> .NET Core Web API, Express.js, WCF</li>
+                                        <li><strong>Databases:</strong> Microsoft SQL, Oracle, MySQL</li>
+                                        <li><strong>Version Control:</strong> Git, SVN, Mercurial, Perforce</li>
+                                    </ul>
+                                    <h4 class="align-left">Achievements</h3>
+                                        <ul>
+                                            <li>AWS Certified Developers Associate: September 2016</li>
+                                            <li>Interactive Intelligence Developer Award of Excellence 2015</li>
+                                            <li>B.S Computer Science, Minor in Applied Physics: Ball State University
+                                                class of 2012</li>
+                                            <li>Co-Author: <a href="https://www.osti.gov/biblio/1029952">Phase Space
+                                                    Dissimilarity Measures for Structural Health Monitoring</a></li>
+                                        </ul>
                             </div>
                         </div>
                     </div>
@@ -118,9 +118,9 @@
                             <div class="row">
                                 <div class="col-4">
                                     <nav class="tabs-nav tabs-nav-block">
-                                        <a href="#tab-1-example-2" class="active">Tab 1</a>
-                                        <a href="#tab-2-example-2">Tab 2</a>
-                                        <a href="#tab-3-example-2">Tab 3</a>
+                                        <a href="#tab-1-example-2" class="orange active">Tab 1</a>
+                                        <a href="#tab-2-example-2" class="orange">Tab 2</a>
+                                        <a href="#tab-3-example-2" class="orange">Tab 3</a>
                                         <a href="#" class="disabled">Disabled</a>
                                     </nav>
                                 </div>
@@ -138,7 +138,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="experience-container"></div>
+
+                        <span id="experience-container"></span>
                     </div>
 
                     <div class="tabs-pane" id="projects">
@@ -180,206 +181,15 @@
             </div>
         </div>
 
-        <!--
-        <div id="About" class="container">
-            <div class="row">
-                <h1 class="text-center">
-                    About Me
-                </h1>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=300x300&w=300&h=300" alt="hello">
-                </div>
-                <div class="col-md-8">
-                    <div class="jumbotron">
-                        <h2>Andrew DePersio</h2>
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
-                            tortor
-                            mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                            magna
-                            mollis euismod. Donec sed odio dui. </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="section-separator">
-            <img src="/assets/subheader2.png" width="100%" height="500px" alt="header2">
-        </div>
-
-        <div id="Portfolio" class="container">
-            
-            <div class="row">
-                <h1 class="text-center">
-                    Portfolio
-                </h1>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Education</h2>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="/assets/ballstate.png" alt="ballstate" width=100% height=100%>
-                        </div>
-                        <div class="col-md-8">
-                            <h3>Ball State University</h3>
-                            <p><strong>Bachelor's of Science</strong> - Computer Science</p>
-                            <p><strong>Minor</strong> - Applied Physics Nanoscience</p>
-                            <p><strong>Graduated</strong> - 2012</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <h2>Certifications</h2>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h3>Amazon Web Services</h3>
-                            <p><strong>AWS Certified Developer</strong> - Associate</p>
-                            <p><strong>Obtained</strong> - 2016</p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="/assets/amazon-web-services.png" alt="amazonwebservices" width=100% height=100%>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h2>Experience</h2>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="/assets/genesys.png" alt="genesys" width=100% height=100%>
-                        </div>
-                        <div class="col-md-8">
-                            <h3>Genesys</h3>
-                            <p><strong>Software Engineer</strong> - Professional Services</p>
-                            <p><strong>September 2016</strong> - Present</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h3>Interactive Intellgence</h3>
-                            <p><strong>Associate Software Engineer</strong> - Development Services</p>
-                            <p><strong>July 2015</strong> - September 2016</p>
-                            <p><strong>Senior Implementation Engineer</strong> - Professional Services Organization</p>
-                            <p><strong>February 2015</strong> - July 2015</p>
-                            <p><strong>Implementation Engineer</strong> - Professional Services Organization</p>
-                            <p><strong>June 2012</strong> - February 2015</p>
-                        </div>
-                        <div class="col-md-4">
-                            <img src="/assets/inin-cloud.jpg" alt="inin" width=100% height=100%>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="/assets/ornl.png" alt="oakridge" width=100% height=100%>
-                        </div>
-                        <div class="col-md-8">
-                            <h3>Oak Ridge National Laboratory</h3>
-                            <p><strong>SULI Intern</strong> - Computation Sciences and Engineering Division</p>
-                            <p><strong>May 2011</strong> - August 2011</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="jumbotron">
-                    <p>
-                        Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
-                        ligula porta felis euismod
-                        semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                        massa
-                        justo sit amet risus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas
-                        eget
-                        quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo,
-                        tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cras
-                        justo
-                        odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod
-                        semper.
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa
-                        justo
-                        sit amet risus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget
-                        quam.
-                        Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo,
-                        tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <div id="carousel" class="is">
-                        <img src="http://placehold.it/150x150" alt="...">
-                        <img src="http://placehold.it/150x150" alt="...">
-                        <img src="http://placehold.it/150x150" alt="...">
-                        <img src="http://placehold.it/150x150" alt="...">
-                        <img src="http://placehold.it/150x150" alt="...">
-                        <img src="http://placehold.it/150x150" alt="...">
-                        <img src="http://placehold.it/150x150" alt="...">
-                        <img src="http://placehold.it/150x150" alt="...">
-                        <img src="http://placehold.it/150x150" alt="...">
-                        <img src="http://placehold.it/150x150" alt="...">
-                        <img src="http://placehold.it/150x150" alt="...">
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </div>
-
-        <div class="section-separator">
-            <img src="/assets/subheader3.png" width="100%" height="500px" alt="header3">
-        </div>
-
-        <div id="Contact" class="container">
-            <div class="row">
-                <h1 class="text-center">
-                    Contact
-                </h1>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-2">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=100x100&w=100&h=100" alt="hello">
-                </div>
-                <div class="col-md-8">
-                    <div class="jumbotron">
-                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
-                            tortor
-                            mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                            magna
-                            mollis euismod. Donec sed odio dui. </p>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <ul>
-                        <li>foo</li>
-                        <li>bar</li>
-                        <li>foobar</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div>
-            <footer>
-                <p>Copyright &copy; Andrew DePersio 2017</p>
-            </footer>
-        </div>
-    </div> -->
-
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.shoelace.style/1.0.0-beta24/shoelace.js"></script>
-        <script src="js/jobs.js"></script>
-        <script src="js/projects.js"></script>
-        <script src="js/main.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script> -->
+    <script src="https://cdn.shoelace.style/1.0.0-beta24/shoelace.js"></script>
+    <script src="js/jobs.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

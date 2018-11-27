@@ -1,25 +1,28 @@
-.navbar-brand {
-    font-size: 1em;
+.orange.active {
+    background-color: #E95420 !important;
+    color: white !important;
+}
+
+.orange {
+    color: #E95420 !important;
 }
 
 .jumbotron {
     padding-bottom: 15px;
     margin-bottom: 15px;
+    background-color: #77216F;
+    color: white;
 }
 
 .jumbotron .row {
     padding-top: 15px;
 }
 
-.jumbotron hr {
-    border-top: 1px solid darkgray;
-}
-
 .profile-image {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    /* height: 150px; */
     border-radius: 50%;
-    border: 3px solid darkgray;
+    border: 3px solid #AEA79F;
 }
 
 .align-center {
