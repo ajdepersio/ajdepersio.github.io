@@ -40,3 +40,8 @@
 .tabs-pane {
     border: none !important; 
 }
+
+.hr-slim hr {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
