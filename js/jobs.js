@@ -3,7 +3,7 @@ var m_jobs = [{
         Logo: "assets/renpsg.png",
         Title: "Software Engineering Team Lead, DFX",
         Department: "IT - Development",
-        StartDate: new Date(2017, 5, 19),
+        StartDate: new Date(2018, 5, 1),
         EndDate: new Date(),
         Description: [""]
     },
@@ -12,8 +12,8 @@ var m_jobs = [{
         Logo: "assets/renpsg.png",
         Title: "Senior Software Engineer",
         Department: "IT - Development",
-        StartDate: new Date(2017, 5, 19),
-        EndDate: new Date(),
+        StartDate: new Date(2017, 5, 1),
+        EndDate: new Date(2018, 5, 1),
         Description: [""]
     },
     {
@@ -21,8 +21,8 @@ var m_jobs = [{
         Logo: "assets/genesys-bubble.png",
         Title: "Software Engineer",
         Department: "Development Services",
-        StartDate: new Date(2017, 5, 19),
-        EndDate: new Date(),
+        StartDate: new Date(2015, 6, 1),
+        EndDate: new Date(2017, 5, 1),
         Description: [""]
     },
     {
@@ -30,17 +30,17 @@ var m_jobs = [{
         Logo: "assets/inin-cloud.png",
         Title: "Senior Implementation Engineer",
         Department: "Professional Services",
-        StartDate: new Date(2017, 5, 19),
-        EndDate: new Date(),
+        StartDate: new Date(2015, 1, 1),
+        EndDate: new Date(2015, 6, 1),
         Description: [""]
     },
     {
         Company: "Interactive Intelligence",
         Logo: "assets/inin-spiral.png",
-        Title: "Application Engineer",
+        Title: "Application Developer",
         Department: "Professional Services",
-        StartDate: new Date(2017, 5, 19),
-        EndDate: new Date(),
+        StartDate: new Date(2012, 5, 1),
+        EndDate: new Date(2015, 1, 1),
         Description: [""]
     },
     {
@@ -48,8 +48,8 @@ var m_jobs = [{
         Logo: "assets/ornl.png",
         Title: "SULI Intern",
         Department: "Computational Sciences Research and Development",
-        StartDate: new Date(2017, 5, 19),
-        EndDate: new Date(),
+        StartDate: new Date(2011, 4, 1),
+        EndDate: new Date(2011, 7, 1),
         Description: [""]
     }
 ];
