@@ -5,7 +5,7 @@ var m_jobs = [{
         Department: "IT - Development",
         StartDate: new Date(2018, 5, 1),
         EndDate: new Date(),
-        Description: [""]
+        Description: ["Did some stuff", "Some other stuff"]
     },
     {
         Company: "RenPSG",
@@ -62,16 +62,44 @@ $.fn.populateJobInfo = function(){
     var header = '<div class="tabs"><div class="row">';
     var nav = '<div class="col-4"><nav class="tabs-nav tabs-nav-block">';
     var content = '<div class="col-8">';
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
 
     //Add content
     var navItem;
-    var contentItem;
     var contentId;
+    var contentItem;
     for (let i = 0; i < m_jobs.length; i++) {
         var job = m_jobs[i];
         contentId = 'job-' + i;
-        navItem = '<a href="#' + contentId + '" class="orange">' + job.Label + '</a>';
-        contentItem = '<div class="tabs-pane" id="' + contentId + '"><h4>' + job.Department + '</h4></div>';
+        navItem = '<a href="#' + contentId + '" class="orange' + (i === 0 ? ' active' : '') + '">' + job.Label + '</a>';
+        contentItem = 
+            '<div class="tabs-pane' + (i === 0 ? ' active' : '') + '" id="' + contentId + '">' + 
+                '<div class="row">' +
+                    '<div class="col-2">' +
+                        '<img src="' + job.Logo + '" height="100" width="100">' +
+                    '</div>' +
+                    '<div class="col-10">' +
+                        '<h4>' + job.Company + '</h4>' +
+                        //'<h4>' + job.Title + ' - ' + job.Department +'</h4>' +
+                        '<h6>' + job.Title +'</h6>' +
+                        '<h6>' + job.Department +'</h6>' +
+                        '<h6>' + monthNames[job.StartDate.getMonth()] + ' ' + job.StartDate.getFullYear() + ' - '+ monthNames[job.EndDate.getMonth()] + ' ' + job.EndDate.getFullYear() +'</h6>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="hr-slim">' +
+                    '<hr>' +
+                '</div>'
+                '<div class="row">' +
+                    '<ul>';
+        job.Description.forEach(description => {
+            contentItem += '<li>' + description + '</li>';
+        });
+        contentItem += 
+                    '</ul>' +
+                '</div>' +
+            '</div>';
         
         nav = nav + navItem;
         content = content + contentItem;
