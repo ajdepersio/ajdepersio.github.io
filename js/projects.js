@@ -1,12 +1,26 @@
-var m_languages = {
+var m_technologies = [{
+    //Languages
     CSharp: {
         Title: ".NET/C#",
         Logo: "",
     },
     NodeJs: {
-        Title: "Node.js"
+        Title: "Node.js",
+        Logo: ""
+    },
+    Perl: {
+        Title: "Perl",
+        Logo: ""
+    },
+    Java: {
+        Title: "Java",
+        Logo: ""
     }
-};
+    //Databases
+    //Frameworks
+    //Version Control
+    //Platform
+}];
 
 var m_projects = [{
         Title: "Placecats",
