@@ -98,8 +98,7 @@ $.fn.populateJobInfo = function(){
         });
         contentItem += 
                     '</ul>' +
-                '</div>' +
-            '</div>';
+                '</div>';
         
         nav = nav + navItem;
         content = content + contentItem;
