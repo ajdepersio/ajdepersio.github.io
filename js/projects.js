@@ -15,9 +15,27 @@ var m_technologies = [{
     Java: {
         Title: "Java",
         Logo: ""
-    }
+    
     //Databases
+},
+    MySql: {
+        Title: "MySQL",
+        Logo: ""
+    
     //Frameworks
+},
+    ExpressJs: {
+        Title: "Express.js",
+        Logo: ""
+    },
+    Gtk: {
+        Title: "GTK",
+        Logo: ""
+    },
+    Slick: {
+        Title: "Slick",
+        Logo: ""
+    }
     //Version Control
     //Platform
 }];
@@ -29,7 +47,7 @@ var m_projects = [{
         Source: "",
         Description: "",
         BulletPoints: [""],
-        Languages: []
+        Languages: [m_technologies.NodeJs]
     },
     {
         Title: "FFMPEGTK",
@@ -38,7 +56,7 @@ var m_projects = [{
         Source: "",
         Description: "",
         BulletPoints: [""],
-        Languages: []
+        Languages: [m_technologies.CSharp]
     },
     {
         Title: "Gitsnare",
@@ -47,7 +65,7 @@ var m_projects = [{
         Source: "",
         Description: "",
         BulletPoints: [""],
-        Languages: []
+        Languages: [m_technologies.Perl]
     },
     {
         Title: "GW2NetCore",
@@ -56,7 +74,7 @@ var m_projects = [{
         Source: "",
         Description: "",
         BulletPoints: [""],
-        Languages: []
+        Languages: [m_technologies.CSharp]
     },
     {
         Title: "LogSlicer",
@@ -65,7 +83,7 @@ var m_projects = [{
         Source: "",
         Description: "",
         BulletPoints: [""],
-        Languages: []
+        Languages: [m_technologies.CSharp]
     },
     {
         Title: "WavMaker",
@@ -74,7 +92,7 @@ var m_projects = [{
         Source: "",
         Description: "",
         BulletPoints: [""],
-        Languages: []
+        Languages: [m_technologies.Perl]
     },
     {
         Title: "Netspeed Monitor",
@@ -83,7 +101,7 @@ var m_projects = [{
         Source: "",
         Description: "",
         BulletPoints: [""],
-        Languages: []
+        Languages: [m_technologies.Perl]
     },
     {
         Title: "Los Alamos Timeclock",
@@ -92,7 +110,7 @@ var m_projects = [{
         Source: "",
         Description: "",
         BulletPoints: [""],
-        Languages: []
+        Languages: [m_technologies.Perl]
     },
     {
         Title: "Morgan's Raid",
@@ -101,7 +119,7 @@ var m_projects = [{
         Source: "",
         Description: "",
         BulletPoints: [""],
-        Languages: []
+        Languages: [m_technologies.Java]
     },
     {
         Title: "Elemental",
@@ -110,6 +128,6 @@ var m_projects = [{
         Source: "",
         Description: "",
         BulletPoints: [""],
-        Languages: []
+        Languages: [m_technologies.Java]
     }
 ];

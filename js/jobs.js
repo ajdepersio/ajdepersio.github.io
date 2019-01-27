@@ -26,7 +26,7 @@ var m_jobs = [{
     },
     {
         Company: "Interactive Intelligence",
-        Logo: "assets/inin-cloud.png",
+        Logo: "assets/inin-cloud.jpg",
         Title: "Senior Implementation Engineer",
         Department: "Professional Services",
         StartDate: new Date(2015, 1, 1),
