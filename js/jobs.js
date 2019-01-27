@@ -4,7 +4,6 @@ var m_jobs = [{
         Title: "Software Engineering Team Lead, DFX",
         Department: "IT - Development",
         StartDate: new Date(2018, 5, 1),
-        EndDate: new Date(),
         Description: ["Did some stuff", "Some other stuff"]
     },
     {
@@ -85,7 +84,7 @@ $.fn.populateJobInfo = function(){
                         //'<h4>' + job.Title + ' - ' + job.Department +'</h4>' +
                         '<h6>' + job.Title +'</h6>' +
                         '<h6>' + job.Department +'</h6>' +
-                        '<h6>' + monthNames[job.StartDate.getMonth()] + ' ' + job.StartDate.getFullYear() + ' - '+ monthNames[job.EndDate.getMonth()] + ' ' + job.EndDate.getFullYear() +'</h6>' +
+                        '<h6>' + monthNames[job.StartDate.getMonth()] + ' ' + job.StartDate.getFullYear() + ' - ' + (job.EndDate === undefined ? "Present" : monthNames[job.EndDate.getMonth()] + ' ' + job.EndDate.getFullYear()) +'</h6>' +
                     '</div>' +
                 '</div>' +
                 '<div class="hr-slim">' +
