@@ -59,8 +59,8 @@ m_jobs.forEach(job => {
 
 $.fn.populateJobInfo = function(){
     var header = '<div class="tabs"><div class="row">';
-    var nav = '<div class="col-4"><nav class="tabs-nav tabs-nav-block">';
-    var content = '<div class="col-8">';
+    var nav = '<div class="col-12 col-sm-4"><nav class="tabs-nav tabs-nav-block">';
+    var content = '<div class="col-12 col-sm-8">';
     const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ];
@@ -76,10 +76,10 @@ $.fn.populateJobInfo = function(){
         contentItem = 
             '<div class="tabs-pane' + (i === 0 ? ' active' : '') + '" id="' + contentId + '">' + 
                 '<div class="row">' +
-                    '<div class="col-2">' +
+                    '<div class="col-12 col-sm-2">' +
                         '<img src="' + job.Logo + '" height="100" width="100">' +
                     '</div>' +
-                    '<div class="col-10">' +
+                    '<div class="col-12 col-sm-10">' +
                         '<h4>' + job.Company + '</h4>' +
                         //'<h4>' + job.Title + ' - ' + job.Department +'</h4>' +
                         '<h6>' + job.Title +'</h6>' +
