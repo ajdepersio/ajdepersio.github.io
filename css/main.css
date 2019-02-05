@@ -1,27 +1,47 @@
-body {
-    /*background-color: #AEA79F;*/
-    /*color: #333333;*/
+.orange.active {
+    background-color: #E95420 !important;
+    color: white !important;
 }
 
-.subsection {
-    margin-bottom: 10px;
+.orange {
+    color: #E95420 !important;
 }
 
-.headtext {
-    vertical-align: middle;
+.jumbotron {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    background-color: #77216F;
+    color: white;
 }
 
-.headshot {
-    margin-right: 10px;
+.jumbotron .row {
+    padding-top: 15px;
 }
 
-#document_body {
-    padding-right: 0px;
+.profile-image {
+    width: 250px;
+    /* height: 150px; */
+    border-radius: 50%;
+    border: 3px solid #AEA79F;
 }
 
-#Home {
-    /*background-color: #AEA79F;*/
-    /*background-image: url("../assets/jumbotron1.png");*/
-    /*color: #FFFFFF;*/
-    margin-bottom: 0px;
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.tabs-pane {
+    border: none !important; 
+}
+
+.hr-slim hr {
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
