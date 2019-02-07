@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta24/shoelace.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <!-- Custom styles for this template -->
     <!--<link href="jumbotron.css" rel="stylesheet">-->
@@ -46,13 +47,13 @@
             <div class="row">
                 <div class="tabs">
                     <nav class="tabs-nav col-12 col-sm-10 offset-sm-1 align-center">
-                        <a href="#about" class="orange">About</a>
-                        <a href="#experience" class="orange active">Experience</a>
+                        <a href="#about" class="orange active">About</a>
+                        <a href="#experience" class="orange ">Experience</a>
                         <a href="#projects" class="orange">Projects</a>
                         <a href="#contact" class="orange">Contact</a>
                     </nav>
                     <hr>
-                    <div class="tabs-pane " id="about">
+                    <div class="tabs-pane active" id="about">
                         <div class="row">
                             <div class="col-12 col-sm-7">
                                 <h4 class="align-left">About</h3>
@@ -139,10 +140,14 @@
                                     </li>
                                 </ul>
                             </div>
+                            <div class="col-12">
+                                <div id="carousel" class="is">
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="tabs-pane active" id="experience">
+                    <div class="tabs-pane" id="experience">
                         <span id="experience-container"></span>
                     </div>
 
@@ -180,7 +185,8 @@
                     </div>
                     <div class="tabs-pane" id="contact">
                         <div class="align-center">
-                            <p>Thank you for taking the time to read through my website. My official resume is available <a href="assets/andrew_depersio_resume.pdf" download>here</a>.</p>
+                            <p>Thank you for taking the time to read through my website. My official resume is
+                                available <a href="assets/andrew_depersio_resume.pdf" download>here</a>.</p>
                             <p>If you wish to contact me, you can do so at the following email address: <a href="mailto:andrew@depersio.net">andrew@depersio.net</a></p>
                         </div>
                     </div>
@@ -191,7 +197,9 @@
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.shoelace.style/1.0.0-beta24/shoelace.js"></script>
+    <script src="js/technologies.js"></script>
     <script src="js/jobs.js"></script>
     <script src="js/projects.js"></script>
     <script src="js/main.js"></script>
