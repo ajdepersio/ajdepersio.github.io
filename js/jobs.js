@@ -1,10 +1,48 @@
-var m_jobs = [{
+var m_jobs = [
+    {
         Company: "RenPSG",
         Logo: "assets/renpsg.png",
-        Title: "Software Engineering Team Lead, DFX",
+        Title: "Software Engineering Manager",
+        Department: "IT - Development",
+        StartDate: new Date(2019, 2, 1),
+        Description: [
+            "Design, execute, utilize and maintain software engineering applications.",
+            "Prepare all required Technical Proposal pertinent to software engineering.",
+            "Administer support for Business Development, Systems Engineering and SR Technical personnel.",
+            "Supervise training and development of software engineering staff.",
+            "Assign work to software engineering personnel and evaluate plus manages their performance.",
+            "Support to recruit engineering personnel, technical staffing and project teams formation.",
+            "Supervise engineering deliverables.",
+            "Manages continuing support and provide system metrics for client facing products.",
+            "Present practical input for strategic technology decisions.",
+            "Support preparation of Technology Roadmap.",
+            "Comply with all professional departmental as well as company best practices.",
+            "Present project management backup as required.",
+            "Help translation of business requirements into technical needs and actions.",
+            "Supervise reporting responsibility for independent software contractors, software engineers and outsourcing partners.",
+            "Ensure software engineering personnel is suitably trained to perform all job function and suitably use project and software related tools."
+        ]
+    },
+    {
+        Company: "RenPSG",
+        Logo: "assets/renpsg.png",
+        Title: "Software Engineering Team Lead",
         Department: "IT - Development",
         StartDate: new Date(2018, 5, 1),
-        Description: ["Did some stuff", "Some other stuff"]
+        EndDate: new Date(2019, 2, 1),
+        Description: [
+            "Create an inspiring team environment with an open communication culture",
+            "Set clear team goals",
+            "Delegate tasks and set deadlines",
+            "Oversee day-to-day operation",
+            "Monitor team performance and report on metrics",
+            "Motivate team members",
+            "Discover training needs and provide coaching",
+            "Listen to team members’ feedback and resolve any issues or conflicts",
+            "Recognize high performance and reward accomplishments",
+            "Encourage creativity and risk-taking",
+            "Suggest and organize team building activities"
+        ]
     },
     {
         Company: "RenPSG",
@@ -13,7 +51,16 @@ var m_jobs = [{
         Department: "IT - Development",
         StartDate: new Date(2017, 5, 1),
         EndDate: new Date(2018, 5, 1),
-        Description: [""]
+        Description: [
+            "Participate in requirements analysis",
+            "Collaborate with internal teams to produce software design and architecture",
+            "Write clean, scalable code using .NET programming languages",
+            "Test and deploy applications and systems",
+            "Revise, update, refactor and debug code",
+            "Improve existing software",
+            "Develop documentation throughout the software development life cycle (SDLC)",
+            "Serve as an expert on applications and provide technical support"
+        ]
     },
     {
         Company: "Genesys",
@@ -22,7 +69,11 @@ var m_jobs = [{
         Department: "Development Services",
         StartDate: new Date(2015, 6, 1),
         EndDate: new Date(2017, 5, 1),
-        Description: [""]
+        Description: [
+            "",
+            "",
+            ""
+        ]
     },
     {
         Company: "Interactive Intelligence",
@@ -31,7 +82,12 @@ var m_jobs = [{
         Department: "Professional Services",
         StartDate: new Date(2015, 1, 1),
         EndDate: new Date(2015, 6, 1),
-        Description: [""]
+        Description: [
+            "Expansion Upon Prior Resonsibilities as Application Developer",
+            "Design and Develop Reusable Packaged Solutions",
+            "Develop Internal Applications in C#",
+            "Lead Technical Project Management Roles"
+        ]
     },
     {
         Company: "Interactive Intelligence",
@@ -40,7 +96,12 @@ var m_jobs = [{
         Department: "Professional Services",
         StartDate: new Date(2012, 5, 1),
         EndDate: new Date(2015, 1, 1),
-        Description: [""]
+        Description: [
+            "Design and Develop Custom IVR Solutions",
+            "Configure CRM Integrations such as SalesForce, SAP, RightNow, etc.",
+            "Technical Requirements Gathering and Authoring",
+            "Provide Production Support"
+        ]
     },
     {
         Company: "Oak Ridge National Laboratory",
@@ -49,7 +110,12 @@ var m_jobs = [{
         Department: "Computational Sciences Research and Development",
         StartDate: new Date(2011, 4, 1),
         EndDate: new Date(2011, 7, 1),
-        Description: [""]
+        Description: [
+            "Database Scalability Research",
+            "Structural Health Monitoring Research",
+            "Linux Virtual Machine Administration",
+            "Programming in Perl and Fortran"
+        ]
     }
 ];
 
