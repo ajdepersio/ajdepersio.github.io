@@ -8,19 +8,17 @@ var m_jobs = [
         Description: [
             "Design, execute, utilize and maintain software engineering applications.",
             "Prepare all required Technical Proposal pertinent to software engineering.",
-            "Administer support for Business Development, Systems Engineering and SR Technical personnel.",
+            "Administer support for Business Development, Systems Engineering and IT Technical personnel.",
             "Supervise training and development of software engineering staff.",
-            "Assign work to software engineering personnel and evaluate plus manages their performance.",
+            "Assign work to software engineering personnel and evaluate performance.",
             "Support to recruit engineering personnel, technical staffing and project teams formation.",
             "Supervise engineering deliverables.",
             "Manages continuing support and provide system metrics for client facing products.",
             "Present practical input for strategic technology decisions.",
             "Support preparation of Technology Roadmap.",
-            "Comply with all professional departmental as well as company best practices.",
             "Present project management backup as required.",
             "Help translation of business requirements into technical needs and actions.",
-            "Supervise reporting responsibility for independent software contractors, software engineers and outsourcing partners.",
-            "Ensure software engineering personnel is suitably trained to perform all job function and suitably use project and software related tools."
+            "Supervise reporting responsibility for independent software contractors, software engineers and outsourcing partners."
         ]
     },
     {
@@ -36,7 +34,6 @@ var m_jobs = [
             "Delegate tasks and set deadlines",
             "Oversee day-to-day operation",
             "Monitor team performance and report on metrics",
-            "Motivate team members",
             "Discover training needs and provide coaching",
             "Listen to team members’ feedback and resolve any issues or conflicts",
             "Recognize high performance and reward accomplishments",
