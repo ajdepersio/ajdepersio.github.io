@@ -1,4 +1,35 @@
 $(document).ready(function() {
+  $('#carousel').populateTechInfo();
+  $('#carousel').slick({
+    arrows: false,
+    slidesToShow: 7,
+    autoplay: true,
+    slidesToScroll: 3,
+    autoplaySpeed: 1500,
+    centerMode: true,
+    centerPadding: '60px',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 5
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      }
+    ]
+  });
+    
   //Years of experience
   var now = new Date();
   var start = new Date(2012, 5, 1);
@@ -6,4 +37,5 @@ $(document).ready(function() {
   $('#experience-years').text(years);
 
   $('#experience-container').populateJobInfo();
+  
 });
