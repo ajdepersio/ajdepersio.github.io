@@ -1,3 +1,15 @@
+//Feature checks
+function supportsTemplate() {
+  return 'content' in document.createElement('template');
+}
+
+if (supportsTemplate()) {
+  //alert('Templates supported');
+} else {
+  // Use old templating techniques or libraries.
+  //alert('Templates not supported');
+}
+
 $(document).ready(function() {
   $('#carousel').populateTechInfo();
   $('#carousel').slick({

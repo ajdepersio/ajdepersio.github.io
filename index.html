@@ -32,10 +32,14 @@
                         <h1 class="display-3">Andrew DePersio</h1>
                         <a href="https://www.linkedin.com/in/andrew-depersio-55ab3643" target="_blank"><i id="social-li"
                                 class="fa fa-linkedin-square fa-2x social"></i></a>
-                        <a href="https://twitter.com/ajdepersio" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-2x social"></i></a>
-                        <a href="https://ajdepersio.tumblr.com/" target="_blank"><i id="social-tb" class="fa fa-tumblr-square fa-2x social"></i></a>
-                        <a href="https://github.com/ajdepersio" target="_blank"><i id="social-gh" class="fa fa-github-square fa-2x social"></i></a>
-                        <a href="mailto:andrew@depersio.net" target="_blank"><i id="social-em" class="fa fa-envelope-square fa-2x social"></i></a>
+                        <a href="https://twitter.com/ajdepersio" target="_blank"><i id="social-tw"
+                                class="fa fa-twitter-square fa-2x social"></i></a>
+                        <a href="https://ajdepersio.tumblr.com/" target="_blank"><i id="social-tb"
+                                class="fa fa-tumblr-square fa-2x social"></i></a>
+                        <a href="https://github.com/ajdepersio" target="_blank"><i id="social-gh"
+                                class="fa fa-github-square fa-2x social"></i></a>
+                        <a href="mailto:andrew@depersio.net" target="_blank"><i id="social-em"
+                                class="fa fa-envelope-square fa-2x social"></i></a>
                         <hr class="slim">
                         <h2>Software Engineer + Manager in Indianapolis</h2>
                     </div>
@@ -148,7 +152,38 @@
                     </div>
 
                     <div class="tabs-pane" id="experience">
-                        <span id="experience-container"></span>
+                        <span id="experience-container">
+                            <div class="row">
+                                <div class="col-12 col-sm-4">
+                                    <nav id="experience-nav-bar" class="tabs-nav tabs-nav-block">
+                                        <template id="experience-nav-item-template">
+                                            <a href="" class="orange"></a>    
+                                        </template>
+                                    </nav>
+                                </div>
+                                <div id="experience-tabs" class="col-12 col-sm-8">
+                                    <template id="experience-tab-item-template">
+                                        <div class="tabs-pane">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-2 experience-image"><img src="" width="100" height="100"></div>
+                                                <div class="col-12 col-sm-10">
+                                                    <h4 class="experience-company"></h4>
+                                                    <h6 class="experience-title"></h6>
+                                                    <h6 class="experience-department"></h6>
+                                                    <h6 class="experience-dates"></h6>
+                                                </div>
+                                            </div>
+                                            <div class="hr-slim">
+                                                <hr>
+                                            </div>
+                                            <template id="experience-description-template">
+                                                <li></li>
+                                            </template>
+                                        </div>    
+                                    </template>
+                                </div>
+                            </div>
+                        </span>
                     </div>
 
                     <div class="tabs-pane" id="projects">
@@ -160,7 +195,8 @@
                         <div class="align-center">
                             <p>Thank you for taking the time to read through my website. My official resume is
                                 available <a href="assets/andrew_depersio_resume.pdf" download>here</a>.</p>
-                            <p>If you wish to contact me, you can do so at the following email address: <a href="mailto:andrew@depersio.net">andrew@depersio.net</a></p>
+                            <p>If you wish to contact me, you can do so at the following email address: <a
+                                    href="mailto:andrew@depersio.net">andrew@depersio.net</a></p>
                         </div>
                     </div>
                 </div>
@@ -168,8 +204,8 @@
         </div>
 
     </div>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.shoelace.style/1.0.0-beta24/shoelace.js"></script>
     <script src="js/technologies.js"></script>
