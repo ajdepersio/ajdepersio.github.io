@@ -25,6 +25,11 @@
     border: 3px solid #AEA79F;
 }
 
+.browser-image {
+    width: 100px;
+    margin-right: 25px;
+}
+
 .align-center {
     text-align: center;
 }

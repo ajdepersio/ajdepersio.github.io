@@ -11,11 +11,8 @@ function featureCheck() {
   return results;
 }
 
-if (featureCheck()) {
-  //alert('Templates supported');
-} else {
-  // Use old templating techniques or libraries.
-  //alert('Templates not supported');
+if (!featureCheck()) {
+  window.location = "/unsupported.html";
 }
 
 $(document).ready(function () {
