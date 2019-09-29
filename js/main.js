@@ -1,16 +1,24 @@
 //Feature checks
-function supportsTemplate() {
-  return 'content' in document.createElement('template');
+function featureCheck() {
+  var results = true;
+
+  if (!('content' in document.createElement('template'))) {
+    results = false;
+  }
+  if (NodeList.prototype.forEach === undefined) {
+    results = false;
+  }
+  return results;
 }
 
-if (supportsTemplate()) {
+if (featureCheck()) {
   //alert('Templates supported');
 } else {
   // Use old templating techniques or libraries.
   //alert('Templates not supported');
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('#carousel').populateTechInfo();
   $('#carousel').slick({
     arrows: false,
@@ -20,8 +28,7 @@ $(document).ready(function() {
     autoplaySpeed: 1500,
     centerMode: true,
     centerPadding: '60px',
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 768,
         settings: {
           arrows: false,
@@ -41,7 +48,7 @@ $(document).ready(function() {
       }
     ]
   });
-    
+
   //Years of experience
   var now = new Date();
   var start = new Date(2012, 5, 1);
@@ -49,5 +56,5 @@ $(document).ready(function() {
   $('#experience-years').text(years);
 
   $('#experience-container').populateJobInfo();
-  
+
 });
