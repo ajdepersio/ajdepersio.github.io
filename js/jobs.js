@@ -121,72 +121,51 @@ m_jobs.forEach(job => {
 });
 
 $.fn.populateJobInfo = function(){
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+
     for (let i = 0; i < m_jobs.length; i++) {
+        var job = m_jobs[i];
         //nav-items
         var navItemTemplate = document.querySelector('#experience-nav-item-template').content;
         var anchor = navItemTemplate.querySelector('a');
-        anchor.textContent = m_jobs[i].Label;
+        anchor.textContent = job.Label;
         anchor.href = "#job-" + i;
         document.querySelector('#experience-nav-bar').appendChild(
             document.importNode(navItemTemplate, true)
         );
         //tab-items
         var tabItemTemplate = document.querySelector('#experience-tab-item-template').content;
+        var tabPane = tabItemTemplate.querySelector('.tabs-pane');
+        tabPane.id = "job-" + i;
+
+        var image = tabItemTemplate.querySelector('.experience-image');
+        var company = tabItemTemplate.querySelector('.experience-company');
+        var title = tabItemTemplate.querySelector('.experience-title');
+        var department = tabItemTemplate.querySelector('.experience-department');
+        var dates = tabItemTemplate.querySelector('.experience-dates');
+        
+        image.src = job.Logo;
+        company.textContent = job.Company;
+        title.textContent = job.Title;
+        department.textContent = job.Department;
+        dates.textContent = monthNames[job.StartDate.getMonth()] + ' ' + job.StartDate.getFullYear() + ' - ' + (job.EndDate === undefined ? "Present" : monthNames[job.EndDate.getMonth()] + ' ' + job.EndDate.getFullYear());
+        //job description
+        var ul = tabItemTemplate.querySelector('.tabs-pane ul');
+        job.Description.forEach(description => {    
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(description));
+            ul.appendChild(li);
+        });
+        
+        
+        document.querySelector('#experience-tabs').appendChild(
+            document.importNode(tabItemTemplate, true)
+        );
+        //HACK: clear out the ul element from previous iterations, otherwise they duplicate across jobs
+        ul.innerHTML = "";
     }
     document.querySelector('#experience-nav-bar a').classList.add("active");
-    
-
-
-    // var header = '<div class="tabs"><div class="row">';
-    // var nav = '<div class="col-12 col-sm-4"><nav class="tabs-nav tabs-nav-block">';
-    // var content = '<div class="col-12 col-sm-8">';
-    // const monthNames = ["January", "February", "March", "April", "May", "June",
-    //     "July", "August", "September", "October", "November", "December"
-    // ];
-
-    // //Add content
-    // var navItem;
-    // var contentId;
-    // var contentItem;
-    // for (let i = 0; i < m_jobs.length; i++) {
-    //     var job = m_jobs[i];
-    //     contentId = 'job-' + i;
-    //     navItem = '<a href="#' + contentId + '" class="orange' + (i === 0 ? ' active' : '') + '">' + job.Label + '</a>';
-    //     contentItem = 
-    //         '<div class="tabs-pane' + (i === 0 ? ' active' : '') + '" id="' + contentId + '">' + 
-    //             '<div class="row">' +
-    //                 '<div class="col-12 col-sm-2">' +
-    //                     '<img src="' + job.Logo + '" height="100" width="100">' +
-    //                 '</div>' +
-    //                 '<div class="col-12 col-sm-10">' +
-    //                     '<h4>' + job.Company + '</h4>' +
-    //                     //'<h4>' + job.Title + ' - ' + job.Department +'</h4>' +
-    //                     '<h6>' + job.Title +'</h6>' +
-    //                     '<h6>' + job.Department +'</h6>' +
-    //                     '<h6>' + monthNames[job.StartDate.getMonth()] + ' ' + job.StartDate.getFullYear() + ' - ' + (job.EndDate === undefined ? "Present" : monthNames[job.EndDate.getMonth()] + ' ' + job.EndDate.getFullYear()) +'</h6>' +
-    //                 '</div>' +
-    //             '</div>' +
-    //             '<div class="hr-slim">' +
-    //                 '<hr>' +
-    //             '</div>'
-    //             '<div class="row">' +
-    //                 '<ul>';
-    //     job.Description.forEach(description => {
-    //         contentItem += '<li>' + description + '</li>';
-    //     });
-    //     contentItem += 
-    //                 '</ul>' +
-    //             '</div>';
-        
-    //     nav = nav + navItem;
-    //     content = content + contentItem;
-    // }
-    
-    // var contentClose = '</div>';
-    // var navClose = '</nav></div>';
-    // var footer = '</div></div>';
-
-    // var ele = header + nav + navClose + content + contentClose + footer;
-
-    // $('#experience-container').append(ele);
+    document.querySelector('#experience-tabs .tabs-pane').classList.add("active");
 };
