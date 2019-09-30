@@ -4,8 +4,7 @@ function featureCheck() {
 
   if (!('content' in document.createElement('template'))) {
     results = false;
-  }
-  if (NodeList.prototype.forEach === undefined) {
+  } else if (NodeList.prototype.forEach === undefined) {
     results = false;
   }
   return results;
@@ -16,7 +15,15 @@ if (!featureCheck()) {
 }
 
 $(document).ready(function () {
-  $('#carousel').populateTechInfo();
+  //Years of experience
+  var now = new Date();
+  var start = new Date(2012, 5, 1);
+  var years = new Date(now - start).getFullYear() - 1970;
+  $('#experience-years').text(years);
+
+  populateJobInfo();
+
+  populateTechInfo();
   $('#carousel').slick({
     arrows: false,
     slidesToShow: 7,
@@ -45,13 +52,4 @@ $(document).ready(function () {
       }
     ]
   });
-
-  //Years of experience
-  var now = new Date();
-  var start = new Date(2012, 5, 1);
-  var years = new Date(now - start).getFullYear() - 1970;
-  $('#experience-years').text(years);
-
-  $('#experience-container').populateJobInfo();
-
 });

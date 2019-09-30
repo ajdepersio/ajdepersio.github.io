@@ -40,18 +40,18 @@ var m_technologies = [
     //Platform
 ];
 
-m_technologies.forEach(tech => {
-    tech.Html =
-        '<div>' +
-        '<img src="' + tech.Logo + '" alt="' + tech.Title + '">' +
-        '<h6 class="align-center">' + tech.Title + '</h6>' +
-        '</div>';
-});
-
-$.fn.populateTechInfo = function () {
-    var ele = "";
+function populateTechInfo() {
     m_technologies.forEach(tech => {
-        ele += tech.Html;
+        var carouselItemTemplate = document.querySelector('#carousel-item-template').content;
+        var image = carouselItemTemplate.querySelector('img');
+        var header = carouselItemTemplate.querySelector('h6');
+
+        image.src = tech.Logo;
+        image.alt = tech.Title;
+        header.textContent = tech.Title;
+
+        document.querySelector('#carousel').appendChild(
+            document.importNode(carouselItemTemplate, true)
+        );
     });
-    $(this).append(ele);
-};
+}

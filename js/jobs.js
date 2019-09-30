@@ -120,7 +120,7 @@ m_jobs.forEach(job => {
     job.Label = job.Company + ": " + job.Title;
 });
 
-$.fn.populateJobInfo = function(){
+function populateJobInfo() {
     const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
     ];
