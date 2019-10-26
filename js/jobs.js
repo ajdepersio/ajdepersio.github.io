@@ -67,9 +67,9 @@ var m_jobs = [
         StartDate: new Date(2015, 6, 1),
         EndDate: new Date(2017, 5, 1),
         Description: [
-            "",
-            "",
-            ""
+            "Design, consultation, and development of custom applications, services, and web applications.",
+            "Programming in C#/.NET, HTML/CSS/JS, and Ember.js",
+            "Requirements gathering and FRS authoring"
         ]
     },
     {

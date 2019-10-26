@@ -23,33 +23,34 @@ $(document).ready(function () {
 
   populateJobInfo();
 
-  populateTechInfo();
-  $('#carousel').slick({
-    arrows: false,
-    slidesToShow: 7,
-    autoplay: true,
-    slidesToScroll: 3,
-    autoplaySpeed: 1500,
-    centerMode: true,
-    centerPadding: '60px',
-    responsive: [{
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 5
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
-        }
-      }
-    ]
-  });
+  //Disabling this for now since I don't have all the pics setup
+  // populateTechInfo();
+  // $('#carousel').slick({
+  //   arrows: false,
+  //   slidesToShow: 7,
+  //   autoplay: true,
+  //   slidesToScroll: 3,
+  //   autoplaySpeed: 1500,
+  //   centerMode: true,
+  //   centerPadding: '60px',
+  //   responsive: [{
+  //       breakpoint: 768,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 5
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         arrows: false,
+  //         centerMode: true,
+  //         centerPadding: '40px',
+  //         slidesToShow: 3
+  //       }
+  //     }
+  //   ]
+  // });
 });
