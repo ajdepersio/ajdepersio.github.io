@@ -1,7 +1,7 @@
 var m_jobs = [
     {
         Company: "RenPSG",
-        Logo: "assets/renpsg.png",
+        Logo: "assets/companies/renpsg.png",
         Title: "Software Engineering Manager",
         Department: "IT - Development",
         StartDate: new Date(2019, 2, 1),
@@ -23,7 +23,7 @@ var m_jobs = [
     },
     {
         Company: "RenPSG",
-        Logo: "assets/renpsg.png",
+        Logo: "assets/companies/renpsg.png",
         Title: "Software Engineering Team Lead",
         Department: "IT - Development",
         StartDate: new Date(2018, 5, 1),
@@ -43,7 +43,7 @@ var m_jobs = [
     },
     {
         Company: "RenPSG",
-        Logo: "assets/renpsg.png",
+        Logo: "assets/companies/renpsg.png",
         Title: "Senior Software Engineer",
         Department: "IT - Development",
         StartDate: new Date(2017, 5, 1),
@@ -61,7 +61,7 @@ var m_jobs = [
     },
     {
         Company: "Genesys",
-        Logo: "assets/genesys-bubble.png",
+        Logo: "assets/companies/genesys-bubble.png",
         Title: "Software Engineer",
         Department: "Development Services",
         StartDate: new Date(2015, 6, 1),
@@ -74,7 +74,7 @@ var m_jobs = [
     },
     {
         Company: "Interactive Intelligence",
-        Logo: "assets/inin-cloud.jpg",
+        Logo: "assets/companies/inin-cloud.jpg",
         Title: "Senior Implementation Engineer",
         Department: "Professional Services",
         StartDate: new Date(2015, 1, 1),
@@ -88,7 +88,7 @@ var m_jobs = [
     },
     {
         Company: "Interactive Intelligence",
-        Logo: "assets/inin-spiral.png",
+        Logo: "assets/companies/inin-spiral.png",
         Title: "Application Developer",
         Department: "Professional Services",
         StartDate: new Date(2012, 5, 1),
@@ -102,7 +102,7 @@ var m_jobs = [
     },
     {
         Company: "Oak Ridge National Laboratory",
-        Logo: "assets/ornl.png",
+        Logo: "assets/companies/ornl.png",
         Title: "SULI Intern",
         Department: "Computational Sciences Research and Development",
         StartDate: new Date(2011, 4, 1),

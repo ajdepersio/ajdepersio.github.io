@@ -1,3 +1,5 @@
+import Project from './models/project.js';
+
 var m_projects = [{
         Title: "Placecats",
         Image: "",
