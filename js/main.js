@@ -1,5 +1,25 @@
 import populateExperienceInfo from './modules/experience.js';
 
+function documentReady(callbackFunction){
+  if(document.readyState != 'loading') {
+    callbackFunction(event);
+  }
+  else {
+    document.addEventListener("DOMContentLoaded", callbackFunction);
+  }
+}
+
+documentReady(event => {
+  //Years of experience
+  var now = new Date();
+  var start = new Date(2012, 5, 1);
+  var years = new Date(now - start).getFullYear() - 1970;
+  document.getElementById('experience-years').textContent = years;
+  
+  //Experience Module
+  populateExperienceInfo();
+});
+
 //Feature checks
 function featureCheck() {
   var results = true;
@@ -15,43 +35,3 @@ function featureCheck() {
 if (!featureCheck()) {
   window.location = "/unsupported.html";
 }
-
-populateExperienceInfo();
-$(document).ready(function () {
-  //Years of experience
-  var now = new Date();
-  var start = new Date(2012, 5, 1);
-  var years = new Date(now - start).getFullYear() - 1970;
-  $('#experience-years').text(years);
-
-  //Disabling this for now since I don't have all the pics setup
-  // populateTechInfo();
-  // $('#carousel').slick({
-  //   arrows: false,
-  //   slidesToShow: 7,
-  //   autoplay: true,
-  //   slidesToScroll: 3,
-  //   autoplaySpeed: 1500,
-  //   centerMode: true,
-  //   centerPadding: '60px',
-  //   responsive: [{
-  //       breakpoint: 768,
-  //       settings: {
-  //         arrows: false,
-  //         centerMode: true,
-  //         centerPadding: '40px',
-  //         slidesToShow: 5
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         arrows: false,
-  //         centerMode: true,
-  //         centerPadding: '40px',
-  //         slidesToShow: 3
-  //       }
-  //     }
-  //   ]
-  // });
-});
