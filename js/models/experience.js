@@ -22,6 +22,6 @@ export default class Experience {
             ? "Present"
             : `${monthNames[this.EndDate.getMonth()]} ${this.EndDate.getFullYear()}`);
 
-        return `${monthNames[this.StartDate.getMonth()]} ${endDate}`;
+        return `${monthNames[this.StartDate.getMonth()]} - ${endDate}`;
     }
 }

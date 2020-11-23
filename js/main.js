@@ -1,3 +1,5 @@
+import populateExperienceInfo from './modules/experience.js';
+
 //Feature checks
 function featureCheck() {
   var results = true;
@@ -14,14 +16,13 @@ if (!featureCheck()) {
   window.location = "/unsupported.html";
 }
 
+populateExperienceInfo();
 $(document).ready(function () {
   //Years of experience
   var now = new Date();
   var start = new Date(2012, 5, 1);
   var years = new Date(now - start).getFullYear() - 1970;
   $('#experience-years').text(years);
-
-  populateJobInfo();
 
   //Disabling this for now since I don't have all the pics setup
   // populateTechInfo();
