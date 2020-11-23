@@ -1,10 +1,6 @@
 import Experience from '../models/experience.js';
 import ExperienceData from '../data/experience-data.js';
 
-ExperienceData.forEach(x => {
-    console.log(x.Label);
-});
-
 function populateExperienceInfo() {
     for (let i = 0; i < ExperienceData.length; i++) {
         var experience = ExperienceData[i];
