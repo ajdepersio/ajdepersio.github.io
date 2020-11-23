@@ -39,19 +39,3 @@ var m_technologies = [
     //Version Control
     //Platform
 ];
-
-function populateTechInfo() {
-    m_technologies.forEach(tech => {
-        var carouselItemTemplate = document.querySelector('#carousel-item-template').content;
-        var image = carouselItemTemplate.querySelector('img');
-        var header = carouselItemTemplate.querySelector('h6');
-
-        image.src = tech.Logo;
-        image.alt = tech.Title;
-        header.textContent = tech.Title;
-
-        document.querySelector('#carousel').appendChild(
-            document.importNode(carouselItemTemplate, true)
-        );
-    });
-}
