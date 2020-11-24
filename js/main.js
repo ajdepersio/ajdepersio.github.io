@@ -1,4 +1,5 @@
 import populateExperienceInfo from './modules/experience.js';
+import populateProjectInfo from './modules/project.js';
 
 function documentReady(callbackFunction){
   if(document.readyState != 'loading') {
@@ -18,6 +19,9 @@ documentReady(event => {
   
   //Experience Module
   populateExperienceInfo();
+
+  //Projects Module
+  populateProjectInfo();
 });
 
 //Feature checks
