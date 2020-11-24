@@ -10,7 +10,8 @@
 
     <title>Andrew DePersio</title>
 
-    <link rel="stylesheet" href="css/lib/shoelace.css">
+    <link rel="stylesheet" href="css/lib/shoelace-v1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.23/dist/shoelace/shoelace.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -194,9 +195,40 @@
                     </div>
 
                     <div class="tabs-pane" id="projects">
-                        <div class="row">
-                            <h2 class="align-center">Coming Soon</h2>
-                        </div>
+                        <h2>Coming Soon</h2>
+                        <span id="projects-container">
+                            <div class="row">
+                                <div class="col-12 col-sm-4">
+                                    <nav id="projects-nav-bar" class="tabs-nav tabs-nav-block">
+                                        <template id="projects-nav-item-template">
+                                            <a href="" class="orange"></a>
+                                        </template>
+                                    </nav>
+                                </div>
+                                <div id="projects-tabs" class="col-12 col-sm-8">
+                                    <template id="projects-tab-item-template">
+                                        <div class="tabs-pane">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-2">
+                                                    <img class="projects-image" src="" width="100" height="100">
+                                                </div>
+                                                <div class="col-12 col-sm-10">
+                                                    <h4 class="projects-company"></h4>
+                                                    <h6 class="projects-title"></h6>
+                                                    <h6 class="projects-department"></h6>
+                                                    <h6 class="projects-dates"></h6>
+                                                </div>
+                                            </div>
+                                            <div class="hr-slim">
+                                                <hr>
+                                            </div>
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </span>
                     </div>
                     <div class="tabs-pane" id="contact">
                         <div class="align-center">
@@ -212,7 +244,8 @@
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="js/lib/shoelace.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.23/dist/shoelace/shoelace.esm.js"></script>
+    <script src="js/lib/shoelace-v1.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
 

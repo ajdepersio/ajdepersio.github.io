@@ -1,11 +1,10 @@
 export default class Project {
-    constructor(title, image, url, source, description, bulletPoints, languages) {
+    constructor(title, images, url, source, description, technologies) {
         this.Title = title;
-        this.Image = image;
+        this.Images = images;
         this.Url = url;
         this.Source = source;
         this.Description = description;
-        this.BulletPoints = bulletPoints;
-        this.Languages = languages;
+        this.Technologies = technologies;
     }
 }
