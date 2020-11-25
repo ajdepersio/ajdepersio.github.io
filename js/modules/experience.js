@@ -2,10 +2,7 @@ import Experience from '../models/experience.js';
 import ExperienceData from '../data/experience-data.js';
 
 function populateExperienceInfoItem(experience, index) {
-    //nav-items
     populateExperienceNavItem(experience, index);
-
-    //tab-items
     populateExperienceContentArea(index, experience);
 }
 
@@ -61,5 +58,3 @@ export default populateExperienceInfo => {
     document.querySelector('#experience-nav-bar a').classList.add("active");
     document.querySelector('#experience-tabs .tabs-pane').classList.add("active");    
 };
-
-//export default populateExperienceInfo;
