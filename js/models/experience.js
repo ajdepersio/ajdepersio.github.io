@@ -18,10 +18,12 @@ export default class Experience {
     }
 
     get Tenure() {
+        let startDate = `${monthNames[this.StartDate.getMonth()]} ${this.StartDate.getFullYear()}`;
+
         let endDate = (this.EndDate === undefined
             ? "Present"
             : `${monthNames[this.EndDate.getMonth()]} ${this.EndDate.getFullYear()}`);
 
-        return `${monthNames[this.StartDate.getMonth()]} - ${endDate}`;
+        return `${startDate} - ${endDate}`;
     }
 }
