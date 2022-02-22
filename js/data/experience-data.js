@@ -2,12 +2,22 @@ import Experience from '../models/experience.js';
 
 const ExperienceData = [
     new Experience(
+        "Indiana University Health",
+        "assets/companies/iuhealth.png",
+        "Enterprise Business Applications",
+        new Date(2021, 1, 1),
+        undefined,
+        [
+
+        ]
+    ),
+    new Experience(
         "RenPSG",
         "assets/companies/renpsg.png",
         "Software Engineering Manager",
         "IT - Development",
         new Date(2019, 2, 1),
-        undefined,
+        new Date(2021, 1, 1),
         [
             "Design, execute, utilize and maintain software engineering applications.",
             "Prepare all required Technical Proposal pertinent to software engineering.",
@@ -38,7 +48,7 @@ const ExperienceData = [
             "Oversee day-to-day operation",
             "Monitor team performance and report on metrics",
             "Discover training needs and provide coaching",
-            "Listen to team members’ feedback and resolve any issues or conflicts",
+            "Listen to team member feedback and resolve any issues or conflicts",
             "Recognize high performance and reward accomplishments",
             "Encourage creativity and risk-taking",
             "Suggest and organize team building activities"
