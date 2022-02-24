@@ -2,13 +2,30 @@ import Experience from '../models/experience.js';
 
 const ExperienceData = [
     new Experience(
+        "Indiana University Health",
+        "assets/companies/iu-health.png",
+        "Senior Software Engineer",
+        "Enterprise Business Applications",
+        new Date(2021, 0, 1),
+        undefined, [
+            "Full stack software development using C# and ASP.NET",
+            "Design, build, and maintain APIs utilizing Azure Functions and Azure API Management",
+            "Design, build, and maintain web frontend using ASP.NET and Sitecore CMS",
+            "CI/CD pipelines and build automation using Azure Devops and Nuke toolchain",
+            "Automated UI and end-to-end tests using Selenium and Specflow",
+            "Participate in Scrum/Agile processes and ceremonies",
+            "Implement managed identity provider using Azure B2C",
+            "Review code and provide feedback amoungst peers",
+            "Build event-driven processes using Azure Service Bus and Hangfire"
+        ]
+    ),
+    new Experience(
         "RenPSG",
         "assets/companies/renpsg.png",
         "Software Engineering Manager",
         "IT - Development",
         new Date(2019, 2, 1),
-        undefined,
-        [
+        new Date(2021, 0, 1), [
             "Design, execute, utilize and maintain software engineering applications.",
             "Prepare all required Technical Proposal pertinent to software engineering.",
             "Administer support for Business Development, Systems Engineering and IT Technical personnel.",
@@ -30,15 +47,14 @@ const ExperienceData = [
         "Software Engineering Team Lead",
         "IT - Development",
         new Date(2018, 5, 1),
-        new Date(2019, 2, 1),
-        [
+        new Date(2019, 2, 1), [
             "Create an inspiring team environment with an open communication culture",
             "Set clear team goals",
             "Delegate tasks and set deadlines",
             "Oversee day-to-day operation",
             "Monitor team performance and report on metrics",
             "Discover training needs and provide coaching",
-            "Listen to team members’ feedback and resolve any issues or conflicts",
+            "Listen to team member feedback and resolve any issues or conflicts",
             "Recognize high performance and reward accomplishments",
             "Encourage creativity and risk-taking",
             "Suggest and organize team building activities"
@@ -50,8 +66,7 @@ const ExperienceData = [
         "Senior Software Engineer",
         "IT - Development",
         new Date(2017, 5, 1),
-        new Date(2018, 5, 1),
-        [
+        new Date(2018, 5, 1), [
             "Participate in requirements analysis",
             "Collaborate with internal teams to produce software design and architecture",
             "Write clean, scalable code using .NET programming languages",
@@ -68,8 +83,7 @@ const ExperienceData = [
         "Software Engineer",
         "Development Services",
         new Date(2015, 6, 1),
-        new Date(2017, 5, 1),
-        [
+        new Date(2017, 5, 1), [
             "Design, consultation, and development of custom applications, services, and web applications.",
             "Programming in C#/.NET, HTML/CSS/JS, and Ember.js",
             "Requirements gathering and FRS authoring"
@@ -81,8 +95,7 @@ const ExperienceData = [
         "Senior Implementation Engineer",
         "Professional Services",
         new Date(2015, 1, 1),
-        new Date(2015, 6, 1),
-        [
+        new Date(2015, 6, 1), [
             "Expansion Upon Prior Resonsibilities as Application Developer",
             "Design and Develop Reusable Packaged Solutions",
             "Develop Internal Applications in C#",
@@ -95,8 +108,7 @@ const ExperienceData = [
         "Application Developer",
         "Professional Services",
         new Date(2012, 5, 1),
-        new Date(2015, 1, 1),
-        [
+        new Date(2015, 1, 1), [
             "Design and Develop Custom IVR Solutions",
             "Configure CRM Integrations such as SalesForce, SAP, RightNow, etc.",
             "Technical Requirements Gathering and Authoring",
@@ -109,8 +121,7 @@ const ExperienceData = [
         "SULI Intern",
         "Computational Sciences Research and Development",
         new Date(2011, 4, 1),
-        new Date(2011, 7, 1),
-        [
+        new Date(2011, 7, 1), [
             "Database Scalability Research",
             "Structural Health Monitoring Research",
             "Linux Virtual Machine Administration",
