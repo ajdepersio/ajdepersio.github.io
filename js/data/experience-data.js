@@ -8,8 +8,15 @@ const ExperienceData = [
         "Enterprise Business Applications",
         new Date(2021, 0, 1),
         undefined, [
-            "Did some stuff",
-            "Did some other stuff"
+            "Full stack software development using C# and ASP.NET",
+            "Design, build, and maintain APIs utilizing Azure Functions and Azure API Management",
+            "Design, build, and maintain web frontend using ASP.NET and Sitecore CMS",
+            "CI/CD pipelines and build automation using Azure Devops and Nuke toolchain",
+            "Automated UI and end-to-end tests using Selenium and Specflow",
+            "Participate in Scrum/Agile processes and ceremonies",
+            "Implement managed identity provider using Azure B2C",
+            "Review code and provide feedback amoungst peers",
+            "Build event-driven processes using Azure Service Bus and Hangfire"
         ]
     ),
     new Experience(
